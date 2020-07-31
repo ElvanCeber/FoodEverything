@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{722B9705-4064-4685-92CA-5151D5BA82F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FoodEverything</RootNamespace>
+    <AssemblyName>FoodEverything</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adisyon.cs" />
+    <Compile Include="FormAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAyarlar.Designer.cs">
+      <DependentUpon>FormAyarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGiris.Designer.cs">
+      <DependentUpon>FormGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKasaİslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKasaİslemleri.Designer.cs">
+      <DependentUpon>FormKasaİslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKilitle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKilitle.Designer.cs">
+      <DependentUpon>FormKilitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMusteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMusteriler.Designer.cs">
+      <DependentUpon>FormMusteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMutfak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMutfak.Designer.cs">
+      <DependentUpon>FormMutfak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRaporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRaporlar.Designer.cs">
+      <DependentUpon>FormRaporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRezervasyon.Designer.cs">
+      <DependentUpon>FormRezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSiparis.Designer.cs">
+      <DependentUpon>FormSiparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Genel.cs" />
+    <Compile Include="FormMasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMasa.Designer.cs">
+      <DependentUpon>FormMasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masalar.cs" />
+    <Compile Include="PersonelHareketleri.cs" />
+    <Compile Include="Personeller.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Siparis.cs" />
+    <Compile Include="UrunCesitleri.cs" />
+    <EmbeddedResource Include="FormGiris.resx">
+      <DependentUpon>FormGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMasa.resx">
+      <DependentUpon>FormMasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSiparis.resx">
+      <DependentUpon>FormSiparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\Restaurant\119-1197254_restaurant-logo-design-vector-png-restaurant-logo-design.png" />
+    <Content Include="Properties\Restaurant\a.jpg" />
+    <None Include="Resources\Rezerve.png" />
+    <None Include="Resources\dolu.png" />
+    <None Include="Resources\AcıkRezerve.png" />
+    <None Include="Resources\bos.png" />
+    <None Include="Properties\Restaurant\bos.jpg" />
+    <Content Include="Properties\Restaurant\images.jpg" />
+    <Content Include="Properties\Restaurant\indir.png" />
+    <Content Include="Properties\Restaurant\kisspng-cashier-management-money-e-commerce-marketing-cashier-5ac64e92c6ed74.9717647715229456828148.jpg" />
+    <Content Include="Properties\Restaurant\kisspng-table-restaurant-computer-icons-cafe-bistro-cafe-table-5b0bc1f5ebf768.9303488215274972059665.jpg" />
+    <Content Include="Properties\Restaurant\lock-computer-icons-clip-art-lock.jpg" />
+    <Content Include="Properties\Restaurant\logo-organization-photography-brand-go-back-button.jpg" />
+    <Content Include="Properties\Restaurant\paket-servisred.png" />
+    <Content Include="Properties\Restaurant\png-clipart-customer-service-touchpoint-company-marketing-customers-service-public-relations-thumbnail.png" />
+    <Content Include="Properties\Restaurant\png-clipart-kitchen-utensil-chef-cooking-computer-icons-culinary-arts-cooking-kitchen-logo.png" />
+    <Content Include="Properties\Restaurant\png-transparent-black-arrow-inside-box-logo-computer-icons-scalable-graphics-desktop-exit-icon-close-miscellaneous-angle-text.png" />
+    <Content Include="Properties\Restaurant\png-transparent-computer-icons-abmeldung-exit-logo-abmeldung-login.png" />
+    <Content Include="Properties\Restaurant\png-transparent-push-button-power-trademark-pushbutton-electrical-switches.png" />
+    <Content Include="Properties\Restaurant\png-transparent-report-computer-icons-chart-document-talent-miscellaneous-logo-business.png" />
+    <Content Include="Properties\Restaurant\reservation-icon-png-10.jpg" />
+    <Content Include="Properties\Restaurant\unnamed.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
